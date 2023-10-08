@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main page</title>
+    <style>
+      .flex-wrapper {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-wrapper">
+      <!-- menu section -->
+      <header>
+        <nav class="menu">
+          <!-- menu header -->
+          <div class="menu__header">
+            <h1>Menu</h1>
+            <a href="./newTask.html"
+              ><button class="button btn-great">+ Add New Task</button></a
+            >
+          </div>
+
+          <!-- search bar -->
+          <div class="menu__search-bar">
+            <form action="/" method="get">
+              <label for="search">Search the task</label>
+              <input type="search" name="search" id="search" />
+            </form>
+          </div>
+
+          <!-- task categories -->
+          <div class="menu__categories">
+            <h2 class="menu__subheader">Tasks</h2>
+            <ul class="menu__list">
+              <li>Upcomming</li>
+              <li>Today</li>
+              <li>Completed</li>
+              <li>In process</li>
+            </ul>
+          </div>
+
+          <!-- lists -->
+          <div class="menu__categories">
+            <h2 class="menu__subheader">Lists</h2>
+            <ul class="menu__list">
+              <li>Personal</li>
+              <li>Personal</li>
+              <li>Personal</li>
+              <li>Personal</li>
+            </ul>
+
+            <button class="button btn-normal">+ Add New List</button>
+          </div>
+        </nav>
+      </header>
+      <!-- tasks section -->
+      <main>
+        <div class="main__header">
+          <div class="main__title">26 September 2023</div>
+          <button class="button btn-normal btn-transparent">Log out</button>
+        </div>
+
+        <ul class="main__task-list">
+          <li class="task">
+            <button class="button btn-great">■</button>
+            <div class="task__body">
+              <div class="task__section">
+                <p>Buy a new laptop to complete the lab from frontend...</p>
+              </div>
+              <div class="task__section">
+                <span class="task__date">2023-09-29</span>
+                <span class="task__list">Personal</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="task">
+            <button class="button btn-great">■</button>
+            <div class="task__body">
+              <div class="task__section">
+                <p>Buy a new laptop to complete the lab from frontend...</p>
+              </div>
+              <div class="task__section">
+                <span class="task__date">2023-09-29</span>
+                <span class="task__list">Personal</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="task">
+            <button class="button btn-great">■</button>
+            <div class="task__body">
+              <div class="task__section">
+                <p>Buy a new laptop to complete the lab from frontend...</p>
+              </div>
+              <div class="task__section">
+                <span class="task__date">2023-09-29</span>
+                <span class="task__list">Personal</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="task">
+            <button class="button btn-great">■</button>
+            <div class="task__body">
+              <div class="task__section">
+                <p>Buy a new laptop to complete the lab from frontend...</p>
+              </div>
+              <div class="task__section">
+                <span class="task__date">2023-09-29</span>
+                <span class="task__list">Personal</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="task">
+            <button class="button btn-great">■</button>
+            <div class="task__body">
+              <div class="task__section">
+                <p>Buy a new laptop to complete the lab from frontend...</p>
+              </div>
+              <div class="task__section">
+                <span class="task__date">2023-09-29</span>
+                <span class="task__list">Personal</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </main>
+    </div>
+
+    <!-- footer -->
+    <footer></footer>
+  </body>
+</html>

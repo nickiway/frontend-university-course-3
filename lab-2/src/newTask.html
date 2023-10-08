@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Task</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header></header>
+
+    <!-- main -->
+    <main>
+      <form class="form">
+        <p class="form__header">Add new task</p>
+
+        <div class="form__container">
+          <label class="form__label" for="taskName">Enter task name</label>
+          <input
+            class="form__input"
+            type="text"
+            name="taskName"
+            id="taskName"
+          />
+        </div>
+
+        <div class="form__container">
+          <label class="form__label" for="date">Enter task's deadline</label>
+          <input class="form__input" type="date" name="date" id="date" />
+        </div>
+
+        <div class="form__container">
+          <select class="form__select" name="list" id="list" value="0">
+            <option class="form__option" value="0">Personal</option>
+            <option class="form__option" value="1">Personal</option>
+            <option class="form__option" value="2">Personal</option>
+            <option class="form__option" value="3">Personal</option>
+          </select>
+        </div>
+
+        <div class="form__container">
+          <button class="button form__button">Create a new task</button>
+        </div>
+      </form>
+    </main>
+
+    <!-- footer -->
+    <footer></footer>
+  </body>
+</html>
