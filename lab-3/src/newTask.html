@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/new-task.css" />
+    <link rel="stylesheet" href="./styles/common.css" />
+    <title>New Task</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header></header>
+
+    <!-- main -->
+    <main class="display-flex align-center justify-center">
+      <form class="form">
+        <div class="form__body">
+          <h2 class="form__header">Add new task</h2>
+
+          <div class="form__container">
+            <span class="form__label">Enter task name</span>
+            <input
+              class="form__input"
+              type="text"
+              data-content="Enter task name"
+              name="taskName"
+              id="taskName"
+            />
+          </div>
+
+          <div class="form__container">
+            <span class="form__label">Enter task's deadline</span>
+            <input class="form__input" type="date" name="date" id="date" />
+          </div>
+
+          <div class="form__container">
+            <select class="form__select" name="list" id="list">
+              <option class="form__option" value="0">Chose the list...</option>
+              <option class="form__option" value="1">Personal</option>
+              <option class="form__option" value="2">Personal</option>
+              <option class="form__option" value="3">Personal</option>
+            </select>
+          </div>
+
+          <div class="form__container">
+            <button class="form__button">Create a new task</button>
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <!-- footer -->
+    <footer></footer>
+  </body>
+</html>
