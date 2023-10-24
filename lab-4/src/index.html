@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/common.css" />
+    <title>Main page</title>
+  </head>
+  <body class="justify-center">
+    <div class="display-flex body__container">
+      <!-- menu section -->
+      <header>
+        <nav class="menu">
+          <!-- menu header -->
+          <div class="menu__header display-flex align-center">
+            <h1>Menu</h1>
+            <a href="./newTask.html"
+              ><button class="btn-normal">+ New Task</button></a
+            >
+          </div>
+
+          <!-- search bar -->
+          <div class="menu__search-bar">
+            <form action="/" method="get">
+              <input
+                class="search-bar"
+                type="search"
+                name="search"
+                id="search"
+                placeholder="Search"
+              />
+            </form>
+          </div>
+
+          <!-- task categories -->
+          <div class="menu__categories">
+            <h4 class="menu__subheader">Tasks</h4>
+            <ul class="menu__list">
+              <li>
+                <button class="btn-normal"><i>icon </i>Upcomming</button>
+              </li>
+              <li>
+                <button class="btn-normal"><i>icon </i>Today</button>
+              </li>
+              <li>
+                <button class="btn-normal"><i>icon </i>Completed</button>
+              </li>
+              <li>
+                <button class="btn-normal"><i>icon </i>In process</button>
+              </li>
+            </ul>
+          </div>
+
+          <!-- lists -->
+          <div class="menu__categories">
+            <h4 class="menu__subheader">Lists</h4>
+            <ul class="menu__list">
+              <li>
+                <button class="btn-normal"><i></i>Upcomming</button>
+              </li>
+              <li>
+                <button class="btn-normal"><i></i>Today</button>
+              </li>
+              <li>
+                <button class="btn-normal"><i></i>Completed</button>
+              </li>
+              <li>
+                <button class="btn-normal"><i></i>In process</button>
+              </li>
+            </ul>
+          </div>
+          <button class="btn-normal">+ Add New List</button>
+        </nav>
+      </header>
+      <!-- tasks section -->
+      <main>
+        <div class="main__header display-flex">
+          <div class="main__title" id="date_header"></div>
+          <div class="button__container">
+            <button class="btn-normal"><i>icon </i>Log out</button>
+          </div>
+        </div>
+
+        <form action="task__form">
+          <ul id="task_list" class="main__task-list"></ul>
+        </form>
+      </main>
+    </div>
+
+    <!-- footer -->
+    <footer></footer>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>

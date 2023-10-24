@@ -1,0 +1,279 @@
+:root {
+  --main-color: rgb(255, 111, 111);
+  --main-color-darken: rgb(208, 92, 92);
+  --success: lightgreen;
+  --fail: lightcoral;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table,
+th,
+td {
+  border: 2px solid rgb(255, 111, 111); /* Border color */
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+}
+
+caption {
+  background-color: rgb(255, 111, 111);
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+}
+
+.completed,
+.not-completed {
+  color: #fff;
+  text-shadow: 0px 0px 2px #000;
+  font-weight: bold;
+}
+
+.completed {
+  background-color: var(--success);
+}
+
+.not-completed {
+  background-color: var(--fail);
+}
+
+a {
+  color: #000;
+}
+
+/* ------ */
+.menu {
+  padding: 0px 40px;
+  display: inline-table;
+}
+
+.menu > div {
+  display: inline-block;
+  margin: 20px;
+}
+
+.header__logo > img {
+  border-radius: 100%;
+}
+
+.header__title {
+  margin: 0 20px;
+}
+
+.menu__item {
+  position: relative;
+}
+
+.menu__item::before {
+  content: "";
+  width: 0%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: var(--main-color);
+  transition: 0.2s ease-in-out;
+}
+
+.menu__item:hover::before {
+  width: 100%;
+}
+
+#get-started {
+  background-color: var(--main-color);
+  color: #fff;
+  text-shadow: 0px 0px 2px #000;
+}
+
+section,
+article,
+aside {
+  padding: 20px;
+}
+
+article {
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  border-right: none;
+}
+
+section:first-child {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+section > h2::first-letter {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 100;
+  margin: 0 2px;
+  font-size: 30px;
+}
+
+/* tilde usage  */
+section ~ section {
+  border-bottom: 2px solid var(--main-color);
+}
+
+/* article */
+.article__title {
+  text-align: center;
+  background: linear-gradient(rgb(255, 111, 111), rgb(139, 66, 66));
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 30px;
+  color: transparent;
+}
+
+.feature-list {
+  list-style-type: lower-alpha;
+}
+
+article > p,
+ul {
+  padding: 20px 0;
+}
+
+aside {
+  background-color: var(--main-color);
+  color: #fff;
+}
+aside > div {
+  margin: 50px;
+}
+
+aside p {
+  text-align: justify;
+}
+
+ul[data-priority="0"] > li {
+  margin: 0 0 0 20px;
+}
+
+input:active,
+textarea:active {
+  border: 1px solid var(--main-color);
+}
+
+.additional-information__image {
+  width: 50%;
+  box-shadow: 0px 0px 20px var(--main-color);
+}
+
+.image__container {
+  margin: 20px;
+}
+
+/* ----- */
+/* form */
+.contact-form {
+  text-align: center;
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+.contact-form form {
+  border: 1px solid black;
+  padding: 20px;
+}
+
+.contact-form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.form__section {
+  margin-bottom: 20px;
+}
+
+.form__title label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--main-color-darken);
+}
+
+/* ----- */
+/* footer */
+
+footer {
+  background-color: rgb(255, 111, 111);
+  color: #fff; /* Text color is white on the red background */
+  padding: 20px;
+}
+
+.contact__title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contact__text {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+/* lab 4 task style */
+#output {
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+#output > div {
+  margin: 5px;
+}
+
+#output__container {
+  padding: 10px;
+  background-color: wheat;
+  font-weight: bold;
+  display: none;
+}

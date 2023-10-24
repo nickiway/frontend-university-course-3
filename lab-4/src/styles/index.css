@@ -1,0 +1,117 @@
+/* body */
+body {
+  background-color: #373535;
+  color: #fff;
+}
+
+/* header */
+header {
+  width: 20%;
+}
+
+/* body */
+body {
+  padding: 10px;
+}
+
+.body__container {
+  margin: 20px;
+}
+
+.menu {
+  border-radius: 20px;
+  background-color: #454545;
+  padding: 40px 20px;
+}
+
+.menu__header > h1 {
+  margin: 0 90px 0px 0px;
+}
+
+/* search bar countainer */
+.menu__search-bar {
+  margin: 20px 0 40px 0;
+}
+
+/* input search */
+input[type="search"] {
+  color: #fff;
+  border: none;
+  padding: 10px;
+  background-color: #939191;
+  border-radius: 5px;
+  width: 100%;
+}
+
+/* setup its placeholder */
+input[type="search"]::placeholder {
+  color: #fff;
+  padding: 0px 10px;
+}
+
+/* menu list */
+.menu__list {
+  list-style: none;
+}
+.menu__list > li {
+  margin: 5px 0;
+}
+
+.menu__categories {
+  margin: 30px 0;
+}
+
+/* main container*/
+main {
+  width: 80%;
+  padding: 0px 50px;
+}
+
+.main__header > .main__title {
+  width: 80%;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.main__header > .button__container {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* task list */
+.main__task-list {
+  padding: 20px 0;
+}
+
+.task > .button__container {
+  margin: 0 20px 0 0;
+}
+
+.task {
+  padding: 10px 0;
+  border-bottom: 2px solid #fff;
+}
+
+.task__information,
+.wrapper,
+.task__body {
+  width: 100%;
+}
+
+.task input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.task__section {
+  margin: 10px 0;
+}
+.task__section > span {
+  margin: 0 20px 0px 0px;
+}
+
+.btn-normal {
+  font-size: 14px;
+}
