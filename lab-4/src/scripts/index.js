@@ -4,6 +4,7 @@ const taskList = document.querySelector("#task_list");
 const form = document.querySelector("#newTaskForm");
 const list = ["Personal", "Personal", "Personal", "Personal"];
 const dateHeader = document.querySelector("#date_header");
+const completed = document.querySelector("input[type='checkbox']");
 
 function isSameDay(date1, date2) {
   return (
@@ -29,6 +30,16 @@ if (form) {
   });
 }
 
+function deleteTask(id) {
+  const jsonList = JSON.parse(window.localStorage.getItem("list"));
+
+  console.log(jsonList);
+  jsonList.splice(id, 1);
+  console.log(jsonList);
+  window.localStorage.setItem("list", JSON.stringify(jsonList));
+  window.location.href = "./index.html";
+}
+
 if (taskList) {
   dateHeader.innerHTML = new Date().toDateString();
   const jsonList = JSON.parse(window.localStorage.getItem("list"));
@@ -44,6 +55,7 @@ if (taskList) {
         name="completed"
         id="completed"
         value="${index}"
+        onclick="deleteTask(${index})"
       />
     </div>
     <div class="task__information display-flex">
