@@ -2,7 +2,7 @@
 
 const taskList = document.querySelector("#task_list");
 const form = document.querySelector("#newTaskForm");
-const list = ["Personal", "Personal", "Personal", "Personal"];
+const list = ["Personal", "Work", "School", "Family"];
 const dateHeader = document.querySelector("#date_header");
 const completed = document.querySelector("input[type='checkbox']");
 
@@ -32,10 +32,8 @@ if (form) {
 
 function deleteTask(id) {
   const jsonList = JSON.parse(window.localStorage.getItem("list"));
-
-  console.log(jsonList);
   jsonList.splice(id, 1);
-  console.log(jsonList);
+
   window.localStorage.setItem("list", JSON.stringify(jsonList));
   window.location.href = "./index.html";
 }
