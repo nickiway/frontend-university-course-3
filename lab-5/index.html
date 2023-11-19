@@ -22,16 +22,14 @@
         </div>
       </div>
 
-      <div class="ui divided list" id="todoList">
-        <!-- Todo items will be added here dynamically -->
-      </div>
+      <div class="ui divided list" id="todoList"></div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
 
     <script>
-      // Function to add new todo item
+      // function to add new todo item
       function addTodo() {
         const newTodoText = $("#newTodoInput").val();
         if (newTodoText.trim() !== "") {
@@ -47,24 +45,24 @@
         }
       }
 
-      // Function to delete a todo item
+      // function to delete a todo item
       function deleteTodo() {
         $(this).closest(".item").remove();
       }
 
-      // Event listener for the Add button
+      // event listener for the Add button
       $("#addTodoBtn").click(function () {
         addTodo();
       });
 
-      // Event listener for Enter key to add todo
+      // event listener for Enter key to add todo
       $("#newTodoInput").keypress(function (event) {
         if (event.which === 13) {
           addTodo();
         }
       });
 
-      // Event listener for dynamically created delete buttons
+      // event listener for dynamically created delete buttons
       $("#todoList").on("click", ".deleteTodo", deleteTodo);
     </script>
   </body>
